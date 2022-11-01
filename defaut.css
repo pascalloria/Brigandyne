@@ -12,11 +12,11 @@ html {
 }
 
 body {
-    margin: 0;
-    gap: 5em; 
+    margin: 0; 
     display: flex;  
     flex-direction: column;
-    color: var(--sec);
+    color: var(--quart);
+    font-size: 16px;
 }
 
 img {
@@ -26,22 +26,32 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--sec);
+    color: var(--tert);
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2em;
 }
 
 #acceuil {
     background-color: var(--prim);   
+    color: var(--tert);
 }
 
 .container {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
 }
 
 #flexHeader {
     display: flex;
     justify-content:space-between;
-    align-items: center;
+    align-items: center;    
 }
 
 #logo {
@@ -55,4 +65,82 @@ a {
 }
 
 
+#presentation {
+   position: relative;
+   height: 100%;
+   color: var(--sec);
+   
+}
 
+#presentation::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(ressources/images/Kirov.png);   
+    background-size: cover;  
+    opacity: 0.75;
+    
+}
+
+
+
+.flexArticle{  
+    position: relative;    
+    display: flex;    
+    column-gap: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px 0;
+    
+}   
+
+.textArticle {
+    flex: 1 1 400px;
+    font-size: 1.2em;   
+}
+.imgArticle{
+    flex: 0 1 500px;
+}
+#textPresentation {
+    text-shadow: 5px 5px 4px var(--prim);
+}
+
+/* A qui s'adresse ce jeu ? */
+
+#imgPublic img {
+    width: 200px;
+    
+}
+
+
+footer {
+    background-color: var(--prim);
+    color: var(--tert);
+}
+
+
+
+
+@media screen and (max-width :1130px ) {
+    .container {
+        width: 700px;
+    }
+    
+}
+
+@media screen and (max-width :730px ) {
+    .container {
+        width: 450px;
+    }
+    
+}
+@media screen and (max-width :460px ) {
+    .container {
+        width: 90%;
+    } 
+    
+}
