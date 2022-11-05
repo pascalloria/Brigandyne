@@ -73,6 +73,7 @@ h3 {
     display: flex;
     justify-content:space-between;
     align-items: center;    
+    column-gap: 2em;
 }
 
 #logo {
@@ -83,6 +84,7 @@ h3 {
     display: flex;
     gap: 1em;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 
@@ -212,6 +214,13 @@ footer {
     .container {
         width: 700px;
     }
+    h1 {
+        font-size: 2.0em;        
+    }
+    h3{
+        font-size: 1.3em;  
+    }
+
     
 }
 
@@ -222,11 +231,20 @@ footer {
     .imgArticle {
         display:none;
     }
+    
+    
 }
 @media screen and (max-width :460px ) {
     .container {
-        width: 100%;
+        width:90%;
     } 
-    
+    .listeHorizontal{
+        flex-direction: column;
+        display: none;
+    }
+
+    body{
+        font-size: 15px;
+    }
     
 }

@@ -14,7 +14,7 @@ const avis = [
     },
     {
         "titreTem" : "Freeeedooom ! ",    
-        "textTem":"Un jeu punitif où l'imagination peut sauvez la a vie voire une partie. Une grosse partie du game se joue sur la chance. Donc ! Il faut jouer petit pour voir grand. L'univers est sombre, ça donne un choix aux joueurs d'être mauvais sans état d'âme. Le système de combat est assez simple, les bonus et malus se donnent en fonction des choix du joueur qui au final se resument à la même tactique pour avoir un bonus max en fonction de la carac choisie.En conclusion, c'est un bon univers, le GM fait un gros travail, parfois plus que nécessaire. Et côté joueur, le système de combat est très punitif parfois un peu trop.",     
+        "textTem":"Un jeu punitif où l'imagination peut sauvez la vie voire une partie. Une grosse partie du game se joue sur la chance. Donc ! Il faut jouer petit pour voir grand. L'univers est sombre, ça donne un choix aux joueurs d'être mauvais sans état d'âme. Le système de combat est assez simple, les bonus et malus se donnent en fonction des choix du joueur qui au final se resument à la même tactique pour avoir un bonus max en fonction de la carac choisie.En conclusion, c'est un bon univers, le GM fait un gros travail, parfois plus que nécessaire. Et côté joueur, le système de combat est très punitif parfois un peu trop.",     
         "auteurTem": "Akalac"          
     },{
         "titreTem" : "brigandyne, une campagne avec de l'action, des rebondissements, du suspens et de l'enquêt ! ",    
@@ -22,8 +22,8 @@ const avis = [
         "auteurTem": "DouleurOrque700" 
     },{
         "titreTem" : "à couper le souffle !",    
-        "textTem":"J'ai beaucoup aimer le fait d'être dans une ville et que la campagne se déroule uniquement là-bas des rebondissement assez sympa et des interaction entre les personnage qui sont excellente",     
-        "auteurTem": "Hourlack" 
+        "textTem":"J'ai beaucoup aimer le fait d'être dans une ville et que la campagne se déroule uniquement là-bas, des rebondissements assez sympa et des interactions entre les personnages qui sont excellente",     
+        "auteurTem": "Hourlack,à propos de la campagne 'Reve de gloire' " 
     }
 
 
