@@ -1,3 +1,12 @@
+@font-face {
+    font-family:xena;
+    src: url(ressources/font/xena/Xena.ttf);
+}
+
+@font-face {
+    font-family: imFellEnglish;
+    src: url(ressources/font/im-fell-english/IMFeENrm28P.ttf);
+}
 :root {
     --prim  : #850606;
     --sec   : #E8F9FD;
@@ -8,15 +17,16 @@
 html { 
     width: 100%;  
     height: 100%;   
-    min-width: 350px; 
+    
 }
 
-body {
+body {    
     margin: 0; 
     display: flex;  
     flex-direction: column;
     color: var(--quart);
-    font-size: 16px;
+    font-size: 18px;
+    font-family: imFellEnglish;
 }
 
 img {
@@ -29,17 +39,28 @@ a {
     color: var(--tert);
 }
 
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: xena, Arial, Helvetica, sans-serif;
+}
+
 h1 {
-    font-size: 5em;
+    font-size: 3.5em;
     margin: 0;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.5em;    
+    margin:0;
 }
 
 #acceuil {
-    background-color: var(--prim);   
+    background-image: url(ressources/images/Fond\ rouge.jpeg);  
+    background-size: cover;
     color: var(--tert);
 }
 
@@ -66,9 +87,8 @@ h3 {
 
 
 #presentation {
-   position: relative;
-   height: 100%;
-   color: var(--sec);
+    position: relative; 
+    color: var(--sec);
    
 }
 
@@ -99,26 +119,86 @@ h3 {
 }   
 
 .textArticle {
-    flex: 1 1 400px;
+    flex: 1 1 60%;
     font-size: 1.2em;   
 }
 .imgArticle{
-    flex: 0 1 500px;
+    flex: 0 1 40%;
 }
 #textPresentation {
     text-shadow: 5px 5px 4px var(--prim);
 }
 
 /* A qui s'adresse ce jeu ? */
+#public {
+   position: relative;
+   color: var(--quart);
+}
 
+#public::before { 
+    content: "";
+    background-image: url(ressources/images/avatar.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;   
+    opacity: 0.25;
+}
 #imgPublic img {
-    width: 200px;
-    
+    width: 200px;    
+}
+/* Témoignage */
+
+#temoignage {
+    background-color: var(--quart);
+    color: var(--sec);
+    padding: 20px 0; 
+    position: relative;
+}
+
+#temoignage::before {
+    content: "";
+    background-image: url(ressources/images/Invocation.jpeg);
+    background-size:cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    opacity: 0.25;
 }
 
 
+
+#auteurTem {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+
+/* FAQ */
+
+#FAQ {
+    background-image: url(ressources/images/Valdemar_Atterdag_brandskattar_Visby_\(1882\).jpg);
+}
+
+#FAQContainer {
+    background-color: var(--sec);
+    margin-top: 0;
+    padding: 20px;
+}
+
+
+#FAQ h3 {
+    font-size: 18px;
+    font-family: imFellEnglish;
+}
+
 footer {
-    background-color: var(--prim);
+    background-image: url(ressources/images/Fond\ rouge.jpeg);  
+    background-size: cover;    
     color: var(--tert);
 }
 
@@ -136,11 +216,14 @@ footer {
     .container {
         width: 450px;
     }
-    
+    .imgArticle {
+        display:none;
+    }
 }
 @media screen and (max-width :460px ) {
     .container {
-        width: 90%;
+        width: 100%;
     } 
+    
     
 }
