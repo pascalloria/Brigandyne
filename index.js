@@ -16,12 +16,14 @@ const avis = [
         "titreTem" : "Freeeedooom ! ",    
         "textTem":"Un jeu punitif où l'imagination peut sauvez la vie voire une partie. Une grosse partie du game se joue sur la chance. Donc ! Il faut jouer petit pour voir grand. L'univers est sombre, ça donne un choix aux joueurs d'être mauvais sans état d'âme. Le système de combat est assez simple, les bonus et malus se donnent en fonction des choix du joueur qui au final se resument à la même tactique pour avoir un bonus max en fonction de la carac choisie.En conclusion, c'est un bon univers, le GM fait un gros travail, parfois plus que nécessaire. Et côté joueur, le système de combat est très punitif parfois un peu trop.",     
         "auteurTem": "Akalac"          
-    },{
+    },
+    {
         "titreTem" : "brigandyne, une campagne avec de l'action, des rebondissements, du suspens et de l'enquêt ! ",    
         "textTem":"Pour moi j'ai passer un très bon moment sur cette campagne avec mon groupe, on a pris notre temps pour progresser dans le scénario car nous avions pas mal d'options à notre disposition pour mettre en place des stratégies lorsque l'on se trouvais dans des situations compliquées, si vous aimez bien l'enquête il y'en aura, des combats avec parcimonie sauf si vous en décidez autrement xD, un système de jeux pas dur a prendre en main et plutôt rapide a comprendre, c'est un jdr que je conseillerais à des joueurs expérimentés et novices",     
         "auteurTem": "DouleurOrque700" 
-    },{
-        "titreTem" : "à couper le souffle !",    
+    },
+    {
+        "titreTem" : "A couper le souffle !",    
         "textTem":"J'ai beaucoup aimer le fait d'être dans une ville et que la campagne se déroule uniquement là-bas, des rebondissements assez sympa et des interactions entre les personnages qui sont excellente",     
         "auteurTem": "Hourlack,à propos de la campagne 'Reve de gloire' " 
     }
