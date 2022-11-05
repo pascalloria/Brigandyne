@@ -153,7 +153,7 @@ h3 {
 }
 /* Témoignage */
 
-#temoignage {
+#temoignages {
     background-color: var(--quart);
     color: var(--sec);
     padding: 20px 0; 
@@ -161,9 +161,10 @@ h3 {
     min-height: 425px; 
     display: flex;
     align-items: center;  
+    z-index: 2;
 }
 
-#temoignage::before {
+#temoignages::before {
     content: "";
     background-image: url(ressources/images/Invocation.jpeg);
     background-size:cover;
@@ -173,14 +174,31 @@ h3 {
     left: 0;
     right: 0;    
     opacity: 0.25;
+    z-index: 1;
+    
 }
 
+#temoignage {
+    position: relative;
+    z-index: 2;
+}
 
 
 #auteurTem {
     font-style: italic;
     font-size: 0.8em;
 }
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#temoignages button {
+    position: relative;
+    z-index: 3; 
+}
+
 
 
 /* FAQ */
