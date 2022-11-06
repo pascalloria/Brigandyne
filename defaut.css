@@ -58,6 +58,10 @@ h3 {
     margin:0;
 }
 
+a svg {
+    width: 25px;
+}
+
 #acceuil {
     background-image: url(ressources/images/Fond\ rouge.jpeg);  
     background-size: cover;
@@ -87,6 +91,10 @@ h3 {
     flex-wrap: wrap;
 }
 
+.aFlex {
+    display: flex;
+    column-gap: 1em;
+}
 
 #presentation {
     position: relative; 
@@ -191,15 +199,27 @@ h3 {
 
 #buttons {
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 
-#temoignages button {
+#temoignages a {
+    margin-top: 1em;
     position: relative;
     z-index: 3; 
+    padding: 10px;    
+    color: var(--prim);      
+    background-color: var(--sec);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.55);
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.55);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.55);
 }
-
-
+#temoignages a:hover{
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75) inset;  
+}
 
 /* FAQ */
 
@@ -228,6 +248,8 @@ footer {
 
 
 
+
+
 @media screen and (max-width :1130px ) {
     .container {
         width: 700px;
@@ -245,6 +267,10 @@ footer {
 @media screen and (max-width :730px ) {
     .container {
         width: 450px;
+    }
+
+    .hiddenLowScreen{
+        display: none;
     }
     .imgArticle {
         display:none;

@@ -38,9 +38,7 @@ document.querySelector("#auteurTem").innerHTML= avis[i].auteurTem
 
 
 document.querySelector("#temoignage").addEventListener("click", ()=>{
-    if (i < avis.length-1){
-        i++}
-    else {i=0}   
+    i<avis.length ? i++ : i=0
     document.querySelector("#titreTem").innerHTML= avis[i].titreTem
     document.querySelector("#textTem").innerHTML= avis[i].textTem
     document.querySelector("#auteurTem").innerHTML= avis[i].auteurTem    
