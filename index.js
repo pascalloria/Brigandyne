@@ -1,5 +1,3 @@
-
-
 const avis = [
     {
         "titreTem"  : "Un systeme de jeux immersif et facile à exploiter",
@@ -27,9 +25,15 @@ const avis = [
         "textTem":"J'ai beaucoup aimer le fait d'être dans une ville et que la campagne se déroule uniquement là-bas, des rebondissements assez sympa et des interactions entre les personnages qui sont excellente",     
         "auteurTem": "Hourlack,à propos de la campagne 'Reve de gloire' " 
     }
-
-
 ]
+
+function nextComment () {
+    i<avis.length-1 ? i++ : i=0
+    document.querySelector("#titreTem").innerHTML= avis[i].titreTem
+    document.querySelector("#textTem").innerHTML= avis[i].textTem
+    document.querySelector("#auteurTem").innerHTML= avis[i].auteurTem    
+}
+
 let i=0
 console.log (avis[0])
 document.querySelector("#titreTem").innerHTML= avis[i].titreTem
@@ -37,14 +41,4 @@ document.querySelector("#textTem").innerHTML= avis[i].textTem
 document.querySelector("#auteurTem").innerHTML= avis[i].auteurTem
 
 
-document.querySelector("#temoignage").addEventListener("click", ()=>{
-    i<avis.length ? i++ : i=0
-    document.querySelector("#titreTem").innerHTML= avis[i].titreTem
-    document.querySelector("#textTem").innerHTML= avis[i].textTem
-    document.querySelector("#auteurTem").innerHTML= avis[i].auteurTem    
-})
-
-
-
-
-
+document.querySelector("#temoignage").addEventListener("click", nextComment)

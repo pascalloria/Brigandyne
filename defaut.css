@@ -189,6 +189,7 @@ a svg {
 #temoignage {
     position: relative;
     z-index: 2;
+    min-height: 275px;
 }
 
 
@@ -220,6 +221,15 @@ a svg {
     -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75) inset;
     -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75) inset;  
 }
+
+#nextCom {
+    position: absolute;
+    top:40%;   
+    right: -50px;
+    color: var(--sec);
+}
+
+
 
 /* FAQ */
 
@@ -290,5 +300,16 @@ footer {
     body{
         font-size: 15px;
     }
+    #nextCom {
+        right: 0px;
+        top:-22%
+        
+    }
+
+    #temoignage {        
+        min-height: 350px;
+    }
+    
+    
     
 }
