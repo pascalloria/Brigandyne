@@ -1,3 +1,4 @@
+
 const avis = [
     {
         "titreTem"  : "Un systeme de jeux immersif et facile à exploiter",
@@ -35,10 +36,10 @@ function nextComment () {
 }
 
 let i=0
-console.log (avis[0])
-document.querySelector("#titreTem").innerHTML= avis[i].titreTem
-document.querySelector("#textTem").innerHTML= avis[i].textTem
-document.querySelector("#auteurTem").innerHTML= avis[i].auteurTem
 
+$("#acceuil").html(header)
+$("nav").html(nav)
+$("footer").html(footer)
 
 document.querySelector("#temoignage").addEventListener("click", nextComment)
+
